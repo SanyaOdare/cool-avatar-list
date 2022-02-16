@@ -1,0 +1,51 @@
+
+body {
+  background-color: #ccc;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+div .avatar-box {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+  transition: transform 150ms;  
+}
+
+div i {
+  position: absolute;
+  top: 30%;
+  right: 18%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+.avatar1 {
+  background-color: #017fb9;
+}
+
+.avatar2 {
+  background-color: #ffa81a;
+}
+
+.avatar3 {
+  background-color: #ce314e;
+}
+
+.avatar-box:hover ~ .avatar-box {
+  transform: translateX(15px);
+  opacity: 0.5;
+}
